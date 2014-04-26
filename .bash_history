@@ -42,3 +42,12 @@ git log --oneline
 rails generate scaffold user name:string email:string location: string description:text --skip-stylesheets
 -p
 rails generate scaffold user name:string email:string location: string description:text --skip-stylesheets -p
+pwd
+ls
+cd micropost
+bundle
+git checkout
+git checkout development
+rails generate scaffold user:string email:string location:string description:text --skip-stylesheets -p
+rails generate scaffold user name:string email:string location:string description:text --skip-stylesheets -p
+rails generate scaffold user name:string email:string location:string description:text --skip-stylesheets
