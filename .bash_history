@@ -123,3 +123,35 @@ git commit -am "Establishing relationship between models"
 git checkout master
 git merge development
 git push origin master
+pwd
+cd micropost
+rails server
+git checkout development
+pwd
+cd /home/vagrant
+ps
+pwd
+ls
+bundle
+cd micropost
+ls
+bundle
+rails g foundation:install
+rails s
+rake routes
+rails s
+pwd
+ls
+cd /home/vagrant
+ls
+git status
+git add --all
+git commit -m "Installing Foundation Framework and Customize Views"
+git checkout master
+git merge development
+git push origin master
+git checkout development
+rails s
+pwd
+cd micropost
+rails s
