@@ -1,0 +1,20 @@
+user.all
+Posts.all
+User.find_by_email('andreslastrat@gmail.com')
+User.find_by_email('andres_late1008@hotmail.com')
+find_by_name('andres')
+find_by_username('andres')
+andres=find_by_email('andres_late1008@hotmail.com')
+andres=User.find_by_email('andres_late1008@hotmail.com')
+andres
+andres.posts
+cities=User.find_by_location('Barranquilla,Colombia')
+cities=User.find_by_location('Barranquilla, Colombia')
+id=User.find_by_id(1)
+id=User.find_by_id(2)
+User.all
+User.delete_all
+Post.all
+Post.delete_all
+rails s
+exit

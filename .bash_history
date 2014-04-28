@@ -155,3 +155,40 @@ rails s
 pwd
 cd micropost
 rails s
+pwd
+ls
+cd micropost
+rails s
+git checkout development
+rails c
+rails g migration RemoveEmailFromUsers email:string
+rake db:migrate
+rails c
+pwd
+bundle
+cd /home/vagrant
+bundle
+cd /home/vagrant/micropost
+bundle
+rails generate devise:install
+exit
+pwd
+cd micropost
+rails s
+pwd
+ls
+rake db:test:prepare
+rake test
+rails s
+cd /home/vagrant
+git status
+git commit -am "Personalize flash message and Fix Edit Posts"
+git checkout master
+git merge development
+git push origin master
+pwd
+cd micropost
+rails s
+sudo yum update
+cd micropost
+bundle
