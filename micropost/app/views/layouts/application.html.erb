@@ -4,6 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!NEW>
+    <link rel="stylesheet" href="stylesheets/foundation.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/app.css">
+
+    <script src="javascripts/modernizr.foundation.js"></script>
+
+     <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!UNTIL HERE!>
     <title><%= content_for?(:title) ? yield(:title) : "Micropost" %></title>
 
     <%= stylesheet_link_tag    "application" %>
@@ -12,8 +28,7 @@
   </head>
 
   <body>
-
-    <nav class="top-bar" data-topbar>
+  <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
           <h1><a href="#">Micropost</a></h1>
@@ -67,6 +82,6 @@
       <%= yield %>
     </div>
   </div>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %>  
   </body>
 </html>

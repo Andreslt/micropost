@@ -192,3 +192,77 @@ rails s
 sudo yum update
 cd micropost
 bundle
+cd micropost
+rails generate devise:install
+rails generate devise user
+rake db:migrate
+rails generate devise:views
+rake routes
+cd micropost
+rails c
+rails s
+rake test
+cd /home/vagrant
+git status
+git add --all
+git status
+git git commit -m "Installing Device Gem, Add Navigation Bar Links"
+git commit -m "Installing Device Gem, Add Navigation Bar Links"
+git checkout master
+git merge development
+git push origin master
+rails s
+pwd
+cd micropost
+rails s
+pwd
+cd micropost
+rails 
+rails s
+pwd
+cd micropost
+rails s
+exit
+pwd
+cd micropost
+rails s
+pwd
+rake test
+pwd
+rails s
+pwd
+rake test 
+rake db:test:prepare
+rake test 
+rails s
+exit
+pwd
+rails new
+rails new BQnected
+pwd
+cd BQnected
+subl.
+subl .
+pwd
+bundñe
+bundle
+pwd
+git config --global user.name = "Andres Lastra"
+git config --global user.email = "Andres Lastra"
+git config --global user.email = "Andreslastrat@gmail.com"
+git config --global user.email = "andreslastrat@gmail.com"
+git init
+git status
+git add --all
+git status
+git commit -m "First Commit"
+git remote add origin https://github.com/Andreslt/BQnected.git
+git push origin master
+git checkout -b development
+git log
+git log --oneline
+pwd
+rails generate scaffold user name:string email:string location:string description:text --skip-stylesheets -p
+rails generate scaffold user name:string email:string location:string description:text --skip-stylesheets
+cd bqnected
+pwd
