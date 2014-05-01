@@ -192,3 +192,20 @@ rails s
 sudo yum update
 cd micropost
 bundle
+git status
+git clean -f -d
+git status
+git checkout development
+git status
+git clean -f -d
+git status
+cd micropost
+git status
+git add --all
+pwd
+cd /home/vagrant
+cd BQnected
+pwd
+ls
+cd /home/vagrant
+exit
