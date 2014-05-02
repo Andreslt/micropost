@@ -209,3 +209,170 @@ pwd
 ls
 cd /home/vagrant
 exit
+pwd
+ls
+rm -r nueva
+ls
+git status
+cd bqnected
+git add --all
+git status
+cd /home/vagrant
+git status
+git add --all
+git status
+git add --all
+git status
+pwd
+git status
+cd bqnected
+git status
+cd /home/vagrant
+cd micropost
+git status
+git add --all
+git clean -n
+git status
+git clean
+git clean -f -d
+git status
+ls
+cd /home/vagrant
+ls
+rm -r micropost
+ls
+git status
+git add --all
+git status
+rm -r bqnected
+git add --all
+git status
+git reseat head --all
+git --help
+git clone https://github.com/Andreslt/micropost.git
+pwd
+git status
+git add --all
+git status
+git commit -m "Pruebas"
+git status
+git checkout master
+git status
+rm -r bqnected
+git status
+git checkout development
+git status
+pwd
+ls
+rm bqnected
+rmdir bqnected
+ls
+git clone https://github.com/Andreslt/BQnected.git
+exit
+pwd
+git clone https://github.com/Andreslt/BQnected.git
+pwd
+ls
+git status
+pwd
+cd bqnected
+cd /
+pwd
+cd /home/vagrant
+pwd
+ls
+cd micropost
+rails s
+cd /home/vagrant
+cd bqnected
+rails s
+pwd
+cd bqnected
+checkout development
+git checkout development
+git checkout -b development
+git log --oneline
+git checkout
+git checkout development
+rails generate scaffold user nombre:string email:string barrio:stringdescripcion:text -skip-stylesheets
+rails generate scaffold post nombre:string tipo:string fecha:date barrio:string ubicacion:string asistentes:integer -skip-stylesheets -p
+rails generate scaffold post nombre:string tipo:string fecha:date barrio:string ubicacion:string asistentes:integer -skip-stylesheets
+rake db:migrate
+bundle exec rake db:rollback
+rails destroy model user
+bundle exec rake db:rollback
+
+rails generate scaffold usuario nombre:string email:string barrio:string descripcion:text id:string -skip-stylesheets --p
+rails generate scaffold evento nombre:string tipo:string fecha:date barrio:string ubicacion:string asistentes:integer -skip-stylesheets
+rails generate scaffold usuario nombre:string email:string barrio:string descripcion:text id:string -skip-stylesheets
+rake db:migrate
+rails s
+rm -f public/index.html
+rake routes
+rails s
+git status
+git add --all
+git s
+status
+git status
+git commit --m "Creating models and setting index to eventos"
+git checkout
+git checkout development
+git checkout master
+git merge development
+git push origin master
+git log --oneline
+git push origin master
+git checkout development
+rails generate scaffold comentario nombre:string comentario:text evento:string asistencia:boolean id:string -skip-stylesheets
+bundle exec rake db:rollback
+rails destroy model usuario
+rails destroy model evento
+rails destroy model comentario
+rails generate scaffold comentario nombre:string comentario:text evento:string asistencia:boolean id:integer -skip-stylesheets
+rails generate scaffold evento nombre:string tipo:string fecha:date barrio:string ubicacion:string asistentes:integer id:integer -skip-stylesheets
+rails generate scaffold usuario nombre:string email:string nickname:string barrio:string descripcion:text id:integer -skip-stylesheets
+rails generate scaffold alerta nombre:string email:string contenido:text id:integer -skip-stylesheets
+rails s
+rake db:migrate
+ bundle exec rake db:rollback 
+drop_table :usuarios
+rake db:migrate
+ bundle exec rake db:rollback 
+rake db:migrate
+bundle exec rake db:rollback
+rake db:migrate
+rails destroy model usuario
+rails destroy model evento
+rails destroy model comentario
+rails destroy model alerta
+rails generate scaffold comentario nombre:string comentario:text evento:string asistencia:boolean id:integer -skip-stylesheets
+rails generate scaffold evento nombre:string tipo:string fecha:date barrio:string ubicacion:string asistentes:integer id:integer -skip-stylesheets
+rails generate scaffold usuario nombre:string email:string nickname:string barrio:string descripcion:text id:integer -skip-stylesheets
+rails generate scaffold alerta nombre:string email:string contenido:text id:integer -skip-stylesheets
+rake db:migrate
+bundle exec rake db:rollback
+rake db:migrate
+rails s
+rails g migration droptables
+rake db:migrate
+rails c
+rake db:migrate
+rails c
+rails destroy model usuario
+rails destroy model evento
+rails destroy model comentario
+rails destroy model alerta
+rails c
+rails generate scaffold comentario nombre:string comentario:text evento:string asistencia:boolean id:integer -skip-stylesheets
+rails destroy model comentario
+rails destroy model alertum
+rails generate scaffold comentario nombre:string comentario:text evento:string asistencia:boolean id:integer -skip-stylesheets
+rails generate scaffold evento nombre:string tipo:string fecha:date barrio:string ubicacion:string asistentes:integer id:integer -skip-stylesheets
+rails generate scaffold usuario nombre:string email:string nickname:string barrio:string descripcion:text id:integer -skip-stylesheets
+rails generate scaffold alerta nombre:string email:string contenido:text id:integer -skip-stylesheets
+rake db:migrate
+rails s
+rails g migration add_descripcion_to_eventos descripcion:text
+rake db:migrate
+rails s
