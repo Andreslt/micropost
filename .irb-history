@@ -17,4 +17,18 @@ User.delete_all
 Post.all
 Post.delete_all
 rails s
+ActiveRecord::Migration.drop_table(:alerts)
+select tables
+ActiveRecord::Migration.drop_table(:droptables)
+ActiveRecord::Migration.drop_table(:alertums)
+ActiveRecord::Migration.drop_table(:add_descripcion_to_eventos)
+ActiveRecord::Migration.drop_table(:alertas)
+ActiveRecord::Migration.drop_table(:comentarios)
+
+ActiveRecord::Migration.drop_table(:alerta)
+ActiveRecord::Migration.drop_table(:[usuarios])
+ActiveRecord::Migration.drop_table(:usuarios)
+ActiveRecord::Migration.drop_table(:barrios)
+ActiveRecord::Migration.drop_table(:eventos)
+ActiveRecord::Migration.drop_table(:alertum)
 exit
