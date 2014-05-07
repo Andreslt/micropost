@@ -4,22 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!NEW>
-    <link rel="stylesheet" href="stylesheets/foundation.min.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/app.css">
-
-    <script src="javascripts/modernizr.foundation.js"></script>
-
-     <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
-
-    <!-- IE Fix for HTML5 Tags -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!UNTIL HERE!>
     <title><%= content_for?(:title) ? yield(:title) : "Micropost" %></title>
 
     <%= stylesheet_link_tag    "application" %>
@@ -28,60 +12,61 @@
   </head>
 
   <body>
-  <nav class="top-bar" data-topbar>
+    <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">Micropost</a></h1>
+          <h1>
+            <%= link_to 'Micropost', root_path %>
+          </h1>
         </li>
-         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
       </ul>
+
       <section class="top-bar-section">
         <!-- Left Nav Section -->
         <ul class="left">
-        <li class="divider"></li>
+          <li class="divider"></li>
           <li>
             <%= link_to 'Posts', posts_path %>
-          </li>          
-          <li>
-            <%= link_to 'Users', users_path %>
-          </li>          
+          </li>
         </ul>
 
         <!-- Right Nav Section -->
         <ul class="right">
-        <li class="divider"></li>
-        <% if user_signed_in? %>
+          <li class="divider"></li>
+          <% if user_signed_in? %>
           <li>
             <%= link_to current_user.name, edit_user_registration_path %>
-          </li>          
+          </li>
           <li>
             <%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
           </li>
-          <%else%>          
-            <li class="active">
-              <%= link_to 'Sign Up', new_user_registration_path %>
-            </li>          
-            <li>
-              <%= link_to 'Sign In', new_user_session_path %>
-            </li>
-          <%end%>
+          <% else %>
+          <li class="active">
+            <%= link_to 'Sign Up', new_user_registration_path %>
+          </li>
+          <li>
+            <%= link_to 'Sign In', new_user_session_path %>
+          </li>
+          <% end %>
         </ul>
+
+
       </section>
     </nav>
+    <div class="row">
+      <div class="columns large-12">
+        <br>
+        <% flash.each do |type, message| %>
+        <div data-alert class="alert-box radius <%= flass_class type %>">
+          <%= message %>
+          <a href="#" class="close">&times;</a>
+        </div>
+        <% end %>
 
-  <div class="row">
-    <div class="columns large-12">
-      <%flash.each do |type, message| %>
-      <div data-alert class="alert-box radius <%= flash_class type %>">
-        <%= message %>
-        <a href="#" class="close">&times;</a>
+        <%= yield %>
       </div>
-      <% end %>
-
-      <%= yield %>
     </div>
-  </div>
-    <%= javascript_include_tag "application" %>  
+    <%= javascript_include_tag "application" %>
   </body>
 </html>

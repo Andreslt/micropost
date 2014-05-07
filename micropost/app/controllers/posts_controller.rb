@@ -1,9 +1,11 @@
 class PostsController < ApplicationController
+  before_filter :get_users
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.order('created_at DESC')
+    @posts = Post.order('created_at desc')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,7 +28,6 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,13 +37,14 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = Post.find(params[:id])    
+    @post = Post.find(params[:id])
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = current_user.posts.new(params[:post])
+
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
@@ -82,4 +84,8 @@ class PostsController < ApplicationController
     end
   end
 
+  private
+  def get_users
+    @users = User.all.map {|user| [user.name, user.id]}
+  end
 end

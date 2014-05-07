@@ -630,3 +630,71 @@ cd bqnected
 rails s
 cd bqnected
 rails s
+cd bqnected
+rake routes
+pwd
+git status
+git add --all
+git status
+git commit -am "adding toolbar and customize"
+git log --oneline
+git push
+git checkout
+git checkout development
+git checkout master
+git merge development
+git push origin master
+cd micropost
+cd ~/bqnected
+rails s
+pwd
+cd micropost
+rails s
+rake db:migrate
+rails s
+server halt
+rails server halt
+rails s
+exit
+vagrant halt
+exi
+exit
+cd micropost
+rails s
+cd bqnected
+rails s
+cd bqnected
+rails c
+rails g migration RemoveEmailFromUsuarios email:string
+rake db:migrate
+andres = Usuarios.find_by_id(1)
+andres = Usuario.find_by_id(1)
+andres = Usuario.find_by_email('andreslastrat@gmail.com')
+rails c
+rails g devise:install
+rails g devise Usuario
+rails g devise:views
+rake routes
+rails c
+rake db:reset
+cd bqnected
+rake db:reset
+rake db:migrate
+rails c
+pwd
+exit
+cd bqnected
+rails s
+exit
+cd bqnected
+git log
+git status
+git checkout master
+git status
+exit
+cd bqnected
+git log
+git status
+exit
+cd bqnected
+rails s

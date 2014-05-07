@@ -6,13 +6,11 @@ find_by_name('andres')
 find_by_username('andres')
 andres=find_by_email('andres_late1008@hotmail.com')
 andres=User.find_by_email('andres_late1008@hotmail.com')
-andres
 andres.posts
 cities=User.find_by_location('Barranquilla,Colombia')
 cities=User.find_by_location('Barranquilla, Colombia')
 id=User.find_by_id(1)
 id=User.find_by_id(2)
-User.all
 User.delete_all
 Post.all
 Post.delete_all
@@ -31,4 +29,24 @@ ActiveRecord::Migration.drop_table(:usuarios)
 ActiveRecord::Migration.drop_table(:barrios)
 ActiveRecord::Migration.drop_table(:eventos)
 ActiveRecord::Migration.drop_table(:alertum)
+User.all
+Evento.all
+Barrio.all
+andres = Usuario.find_by_email('andreslastrat@gmail.com')
+andres
+andres.eventos
+andres.evento
+andres.barrios
+andres.comentarios
+andres = Usuario.find_by_id(1)
+Usuario.delete_all
+comentario.delete_all
+comentario.all
+Comentario.all
+Comentario.delete_all
+Barrio.delete_all
+Alerta.delete_all
+Evento.delete_all
+Usuario.fields
+Usuario.all
 exit
